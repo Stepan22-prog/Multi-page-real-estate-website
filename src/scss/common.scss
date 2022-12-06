@@ -1,0 +1,31 @@
+.side_padding {
+    padding: 0 2.5%;
+}
+
+.img-subtitle {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    @include adaptiveValue("font-size", 16, 10);
+    @include adaptiveValue("line-height", 19, 12);
+    text-transform: uppercase;
+}
+
+.img-title {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    @include adaptiveValue("font-size", 50, 30);
+    @include adaptiveValue("line-height", 64, 38);
+    text-transform: capitalize;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 48, 24);
+    @include adaptiveValue("line-height", 69, 30);
+}
