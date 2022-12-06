@@ -1,5 +1,5 @@
 .projects {
-    @include adaptiveValue("margin-top", 105, 42);
+    margin-top: rem(120);
 }
 
 .projects__tabs {}
@@ -9,6 +9,12 @@
     justify-content: space-between;
     align-items: center;
     padding: none;
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(20);
+    }
 }
 
 .projects__title {}
@@ -38,7 +44,7 @@
 ._tab-active {}
 
 .tabs__content {
-    margin-top: 70px;
+    @include adaptiveValue("margin-top", 70, 10);
 }
 
 .tabs__body {}
@@ -49,23 +55,11 @@
 
 .projects__wrapper {}
 
-.projects__slide {
-    display: flex;
-    // justify-content: space-between;
-    gap: 30px;
-
-    @media (max-width:$laptop) {
-        gap: 10px;
-    }
-}
+.projects__slide {}
 
 .projects-slide__item {
     position: relative;
     transition: 0.4s;
-
-    @media (max-width:$laptop) {
-        max-width: 250px;
-    }
 
     &:hover {
         .projects-slide__info {
@@ -136,7 +130,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 98px;
+    @include adaptiveValue("margin-top", 98, 20);
     gap: 5px;
 
     .swiper-pagination-bullet {

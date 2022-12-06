@@ -117,7 +117,6 @@ function initSliders() {
 			autoHeight: true,
 			speed: 800,
 			loop: true,
-			spaceBetween: 30,
 			preloadImages: false,
 			lazy: true,
 			grabCursor: true,
@@ -132,7 +131,23 @@ function initSliders() {
 				type: 'bullets',
 				clickable: true
 			},
-			// События
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 10
+				},
+				767: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				1439: {
+					spaceBetween: 30,
+				}
+			},
 		});
 	}
 	if (document.querySelector('.slider-type_building')) { // Указываем скласс нужного слайдера
@@ -142,10 +157,8 @@ function initSliders() {
 			// для конкретного случая
 			modules: [Pagination],
 			observer: true,
-			loop: true,
+			loop: false,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
 			loop: true,
@@ -159,6 +172,23 @@ function initSliders() {
 				type: 'bullets',
 				clickable: true
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 10
+				},
+				767: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				1439: {
+					spaceBetween: 30,
+				}
+			},
 		});
 	}
 	if (document.querySelector('.slider-type_interior')) { // Указываем скласс нужного слайдера
@@ -170,8 +200,6 @@ function initSliders() {
 			observer: true,
 			loop: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
 			preloadImages: false,
@@ -182,6 +210,23 @@ function initSliders() {
 				el: '.swiper-pagination',
 				type: 'bullets',
 				clickable: true
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 10
+				},
+				767: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				1439: {
+					spaceBetween: 30,
+				}
 			},
 		});
 	}
