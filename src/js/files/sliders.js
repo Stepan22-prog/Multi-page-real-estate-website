@@ -145,6 +145,7 @@ function initSliders() {
 					spaceBetween: 20,
 				},
 				1439: {
+					slidesPerView: 4,
 					spaceBetween: 30,
 				}
 			},
@@ -187,6 +188,7 @@ function initSliders() {
 				},
 				1439: {
 					spaceBetween: 30,
+					slidesPerView: 4
 				}
 			},
 		});
@@ -226,6 +228,7 @@ function initSliders() {
 				},
 				1439: {
 					spaceBetween: 30,
+					slidesPerView: 4
 				}
 			},
 		});

@@ -26,6 +26,5 @@
 
 .title {
     font-weight: 700;
-    @include adaptiveValue("font-size", 48, 24);
-    @include adaptiveValue("line-height", 69, 30);
+    @include adaptiveValue("font-size", 70, 24);
 }

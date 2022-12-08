@@ -17,7 +17,10 @@
     }
 }
 
-.projects__title {}
+.projects__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 48, 24);
+}
 
 .tabs__navigation {
     display: flex;
