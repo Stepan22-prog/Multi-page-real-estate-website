@@ -1,0 +1,117 @@
+.articles {
+    @include adaptiveValue("margin-top", 141, 40);
+    @include adaptiveValue("margin-bottom", 141, 40);
+}
+
+.articles__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.articles__title {}
+
+.title {}
+
+.articles__link {
+    font-weight: 600;
+    font-size: rem(16);
+    color: #929292;
+    display: flex;
+    align-items: center;
+    gap: rem(14);
+
+    @media (any-hover: hover) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        font-size: rem(12);
+    }
+}
+
+.articles__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: rem(89);
+
+    @media (max-width:$laptop) {
+        margin-top: rem(38);
+    }
+
+    @media (max-width:$tablet) {
+        margin-top: rem(20);
+    }
+}
+
+.articles__card {
+    position: relative;
+
+    &:hover {
+        .articles-card__info {
+            opacity: 1;
+            transition: 0.3s;
+        }
+    }
+}
+
+.articles-card__img {}
+
+.articles-card__title {
+    position: absolute;
+    bottom: rem(50);
+    left: rem(30);
+    font-weight: 700;
+    @include adaptiveValue("font-size", 25, 18);
+}
+
+.articles-card__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+    height: 100%;
+    background: #272727;
+    border: 1px solid #FCD54C;
+    padding: rem(25);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(16);
+
+    @media (max-width:$laptop) {
+        font-size: rem(12);
+    }
+}
+
+.articles-info__date {}
+
+.articles-info__title {
+    font-weight: 700;
+    font-size: rem(25);
+    margin-top: rem(15);
+    margin-bottom: rem(28);
+
+    @media (max-width:$laptop) {
+        font-size: rem(18);
+    }
+}
+
+.articles-info__text {
+    color: #929292;
+    flex: auto;
+}
+
+.articles-info__link {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    color: $yellow;
+    padding-top: rem(10);
+}
