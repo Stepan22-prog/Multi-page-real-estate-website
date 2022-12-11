@@ -449,7 +449,7 @@ export function menuRight(windowWidth, menuWidth) {
 		document.getElementById('mySidenav').style.left = '105%';
 	})
 }
-
+import * as scrollOff from './script.js';
 export function menuLeft(windowWidth, menuWidth) {
 	let burger = document.querySelector('.header__burger');
 	let menuItem = document.querySelectorAll('.menu__item');
@@ -483,12 +483,14 @@ export function menuLeft(windowWidth, menuWidth) {
 		}
 	}
 	const close = () => {
+		scrollOff.enableScroll();
 		burger.style.display = 'block';
 		closeBtn.style.display = 'none';
 		document.getElementById('mySidenav').style.left = menuWidth ? '-100%' : -menuWidth + 'px';
 	}
 	document.getElementById('mySidenav').style.width = menuWidth ? '100%' : menuWidth + 'px';
 	burger.addEventListener('click', () => {
+		scrollOff.disableScroll();
 		burger.style.display = 'none';
 		closeBtn.style.display = 'block';
 		document.getElementById('mySidenav').style.left = 0;

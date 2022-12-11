@@ -45,6 +45,8 @@
 
     @media (max-width:$tablet) {
         margin-top: rem(20);
+        flex-direction: column;
+        align-items: center;
     }
 }
 

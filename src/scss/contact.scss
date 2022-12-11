@@ -44,6 +44,10 @@
     &::placeholder {
         font-size: rem(18);
     }
+
+    @media (max-width:$tablet) {
+        max-width: 220px;
+    }
 }
 
 .contact-form__btn {
@@ -60,6 +64,10 @@
             color: #272727;
             transition: 0.3s;
         }
+    }
+
+    @media (max-width:$tablet) {
+        padding: 0 35px;
     }
 }
 

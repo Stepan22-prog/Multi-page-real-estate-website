@@ -37,7 +37,7 @@
 .header__burger {
     display: none;
     z-index: 11;
-    position: absolute;
+    position: fixed;
     width: 30px;
     height: 20px;
     flex: 0 0 auto;

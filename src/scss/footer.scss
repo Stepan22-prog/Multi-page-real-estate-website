@@ -1,0 +1,154 @@
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 70px;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 51px 2.5% 90px 2.5%;
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+        padding: 40px 2.5% 62px 2.5%;
+    }
+}
+
+.footer__spoilers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 75%;
+
+    @media (max-width: 1320px) {
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+    }
+
+    @media (max-width:$tablet) {
+        width: 100%;
+    }
+}
+
+.footer-spoilers__item {
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-size: rem(18);
+    color: #E8E8E8;
+}
+
+.footer-spoilers-item__title {
+    font-weight: 400;
+    display: flex;
+
+    img {
+        display: none;
+        margin-left: auto;
+    }
+
+    @media (max-width: 1320px) {
+        padding: 15px 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        img {
+            display: block;
+        }
+
+        &._spoiler-active {
+            img {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+.footer-spoilers-item__body {
+    margin-top: 40px;
+}
+
+.footer-spoilers-item__link {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__contacts {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(18);
+    color: #E8E8E8;
+}
+
+.footer-contacr__title {}
+
+.footer-contact__address {
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-contact__email {}
+
+.footer-contact__btn {
+    margin-top: 78px;
+
+    @media (max-width:$tablet) {
+        margin-top: 52px;
+    }
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px 2.5%;
+
+    @media (max-width:$tablet) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.footer__copyright {
+    font-family: 'Lexend';
+    font-weight: 300;
+    font-size: rem(18);
+
+    @media (max-width:$tablet) {
+        font-size: rem(12);
+    }
+}
+
+.footer__social {
+    display: flex;
+    gap: 28px;
+}
+
+.footer-social__item {
+    transition: 0.3s;
+
+    @media (any-hover: hover) {
+        &:hover {
+            transition: 0.3s;
+            cursor: pointer;
+            opacity: 0.6;
+        }
+    }
+}

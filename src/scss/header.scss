@@ -2,12 +2,15 @@
 //Header
 //====================================================================================================
 .header {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px 2.5%;
     z-index: 11;
+    background: #272727;
 
     .header__logo {}
 
@@ -68,7 +71,7 @@
 }
 
 .header-menu__item,
-.spoilers__title {
+.header .spoilers__title {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -84,7 +87,7 @@
     }
 }
 
-.spoilers__title {
+.header .spoilers__title {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -114,21 +117,7 @@
     }
 }
 
-.header__consult-btn {
-    background: $yellow;
-    padding: 13px 14px;
-    color: #000;
-    font-weight: 600;
-    transition: 0.3s;
-
-    @media (any-hover: hover) {
-        &:hover {
-            color: #fff;
-            background: #272727;
-            transition: 0.3s;
-        }
-    }
-}
+.header__consult-btn {}
 
 .header__phone {
     white-space: no-wrap;
@@ -137,12 +126,12 @@
 @media (max-width:$laptop) {
 
     .header-menu__item,
-    .spoilers__title {
+    .header .spoilers__title {
         font-size: rem(36);
         line-height: math.div(44, 36);
     }
 
-    .spoilers__title {
+    .header .spoilers__title {
         font-weight: 600;
     }
 }

@@ -62,7 +62,7 @@ flsFunctions.tabs();
 Документация: https://template.fls.guru/template-docs/funkcional-popup.html
 Сниппет (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
@@ -155,7 +155,7 @@ import "./files/sliders.js";
 // import './libs/watcher.js'
 
 // Функции работы скроллом
-import * as flsScroll from "./files/scroll/scroll.js";
+//import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
 // Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
@@ -194,5 +194,4 @@ import "./libs/dynamic_adapt.js";
 // ========================================================================================================================================================================================================================================================
 /* Подключаем файлы со своим кодом */
 import "./files/script.js";
-import { Autoplay } from "swiper";
 //============================================================================================================================================================================================================================================
