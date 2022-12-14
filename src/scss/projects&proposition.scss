@@ -60,11 +60,14 @@
 
 .projects__slide {}
 
-.projects-slide__item {
+.projects-slide__item,
+.proposition__card {
     position: relative;
 
     &:hover {
-        .projects-slide__info {
+
+        .projects-slide__info,
+        .proposition__info {
             opacity: 1;
             transition: 0.4s;
         }
@@ -73,7 +76,8 @@
 
 .projects-slide__background {}
 
-.projects-slide__title {
+.projects-slide__title,
+.proposition-card__title {
     position: absolute;
     left: 40px;
     bottom: 40px;
@@ -82,7 +86,8 @@
     @include adaptiveValue("line-height", 45, 22);
 }
 
-.projects-slide__info {
+.projects-slide__info,
+.proposition__info {
     position: absolute;
     top: 0;
     left: 0;
@@ -107,21 +112,26 @@
     }
 }
 
-.projects-info__title {
+.projects-info__title,
+.proposition__title {
     font-weight: 700;
     @include adaptiveValue("font-size", 32, 18);
 }
 
-.projects-info__text {
+.projects-info__text,
+.propostion__text {
     font-family: 'Work Sans';
     font-weight: 400;
     @include adaptiveValue("font-size", 19, 10);
 }
 
-.projects-info__link {
+.projects-info__link,
+.proposition__link {
     font-family: 'Work Sans';
     font-weight: 700;
     @include adaptiveValue("font-size", 20, 12);
+    display: flex;
+    align-items: center;
 }
 
 .slider-type_building {}
@@ -146,4 +156,58 @@
             background: $yellow;
         }
     }
+}
+
+//proposition
+.proposition__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+}
+
+.proposition__container {
+    margin-bottom: rem(230);
+
+    @media (max-width:$laptop) {
+        margin-bottom: rem(50);
+    }
+}
+
+.proposition__body {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(15);
+    margin-top: rem(91);
+
+    @media (max-width:$laptop) {
+        margin-top: rem(30);
+    }
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.proposition__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 32, 24);
+}
+
+.proposition__more {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-weight: 600;
+    color: #929292;
+
+    @media (max-width:$tablet) {
+        margin-top: rem(30);
+    }
+}
+
+.proposition-card__title {
+    @include adaptiveValue("font-size", 25, 15);
+    line-height: 1em;
 }

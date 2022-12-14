@@ -7,11 +7,12 @@ import { flsModules } from "./modules.js";
 
 const videoBlock = document.querySelector('.about__video');
 const videoController = document.querySelector('.about-video__controller');
-
-videoController.addEventListener('click', () => {
-    videoBlock.classList.add('type_error');
-    videoController.innerHTML = 'Error. Unable to load the video'
-})
+if (videoBlock && videoController) {
+    videoController.addEventListener('click', () => {
+        videoBlock.classList.add('type_error');
+        videoController.innerHTML = 'Error. Unable to load the video'
+    })
+}
 
 //scrollOff
 
@@ -55,4 +56,19 @@ export function enableScroll() {
     window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+//select
+const select = document.querySelector('.table__select');
+const tableBody = document.querySelector('.table__body')
+if (select) {
+    select.addEventListener('change', () => {
+        if (select.value == 2) {
+            tableBody.classList.remove('group_1');
+            tableBody.classList.add('group_2');
+        } else {
+            tableBody.classList.remove('group_2');
+            tableBody.classList.add('group_1');
+        }
+    })
 }

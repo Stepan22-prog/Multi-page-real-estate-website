@@ -154,12 +154,18 @@ body {
 @import "common";
 
 // Подключение стилей отдельных блоков
+//global
 @import "header";
-@import "welcome";
-@import "projects";
-@import "about";
+@import "footer";
 @import "contact";
+@import "projects&proposition";
+//first page
+@import "welcome";
+@import "about";
 @import "articles";
 @import "reviews";
 @import "faq";
-@import "footer";
+//second page
+@import "rent";
+@import "apartments";
+@import "packages";

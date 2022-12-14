@@ -1,0 +1,240 @@
+.apartments {
+    margin-top: 30px;
+}
+
+.apartments__breadcrumbs {
+    display: flex;
+    gap: 5px;
+}
+
+.apartments-breadcrumbs__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(14);
+
+    &:not(:last-child) {
+        padding-right: rem(11);
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background: url('@img/Arrow.svg') 0 0/100%;
+        width: 5px;
+        height: 9px;
+        position: absolute;
+        right: 0;
+    }
+
+    &._active_breadcrumbs {
+        color: #979797;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        font-size: rem(12);
+    }
+}
+
+.small_container {
+    max-width: rem(728);
+    margin: 0 auto;
+    padding: 0 rem(15);
+}
+
+.apartments__text {
+    margin-top: rem(76);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(26);
+    color: #979797;
+
+    .new-parag {
+        margin-top: rem(50);
+    }
+
+    @media (max-width:$laptop) {
+        margin-top: rem(40);
+
+        .new-parag {
+            margin-top: rem(20);
+        }
+    }
+
+    @media (max-width:$tablet) {
+        font-size: rem(14);
+    }
+}
+
+.apartment__img {
+    margin: rem(80) 0;
+
+    @media (max-width:$laptop) {
+        margin: rem(40) 0;
+    }
+
+    @media (max-width:$tablet) {
+        margin: rem(30) 0;
+    }
+}
+
+.apartments__methods {}
+
+
+.apartments__quote {
+    display: flex;
+    padding: rem(41);
+    border: 4px solid #FCD54C;
+    margin-top: rem(108);
+
+    @media (max-width:$laptop) {
+        margin-top: rem(50);
+    }
+
+    @media (max-width:$tablet) {
+        padding: rem(20);
+        flex-direction: column;
+    }
+}
+
+.apartments-quote__decoration {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: rem(100);
+    color: $yellow;
+    padding-right: rem(25);
+    line-height: 0.7em;
+}
+
+.apartments-quote__text {
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: rem(35);
+
+    @media (max-width:$tablet) {
+        font-size: rem(18);
+        line-height: rem(27);
+    }
+}
+
+.apartments-quote__author {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    margin-top: rem(27);
+}
+
+.apartments-quote__profession {
+    color: #979797;
+    margin-top: rem(10);
+}
+
+.apartments-img-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(10);
+    margin-top: rem(210);
+
+    @media (max-width:$laptop) {
+        margin-top: rem(50);
+    }
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+    }
+}
+
+.apartments-img-grid__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: rem(10);
+}
+
+.apartments-img-grid__row {}
+
+.apartments-statistic {
+    margin-top: rem(120);
+    margin-bottom: rem(60);
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:$laptop) {
+        margin-top: rem(50);
+        margin-bottom: rem(50);
+    }
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.apartments-statistic__item {
+    display: flex;
+    gap: rem(24);
+    align-items: center;
+
+}
+
+.apartments-statistic__number {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: rem(60);
+    color: #FCD54C;
+    position: relative;
+    padding-right: rem(21);
+
+    .apartments-statistic__plus {
+        font-size: rem(30);
+        position: absolute;
+        top: -3px;
+        right: 0;
+    }
+}
+
+.apartments-statistic__description {
+    font-weight: 600;
+    line-height: rem(21);
+    max-width: min-content;
+}
+
+.apartments__title {
+    font-weight: 700;
+    font-size: rem(25);
+
+    &.margin_top {
+        margin-top: rem(46);
+    }
+}
+
+.apartments__list {
+    color: #979797;
+    margin-top: rem(41);
+    margin-bottom: rem(100);
+    border-top: 1px solid #929292;
+    padding-top: rem(65);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    line-height: rem(26);
+
+    @media (max-width:$laptop) {
+        margin-bottom: rem(50);
+    }
+
+    @media (max-width:$tablet) {
+        margin-top: rem(30);
+        padding-top: rem(30);
+    }
+}
+
+.apartments-list__item {
+    list-style: outside;
+    margin-left: rem(15);
+}

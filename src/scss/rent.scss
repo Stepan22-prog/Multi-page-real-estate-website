@@ -1,0 +1,40 @@
+.rent {
+    position: relative;
+    margin-top: 90px;
+}
+
+.rent__background {}
+
+.rent__body {
+    position: absolute;
+    left: 19%;
+    bottom: 13%;
+}
+
+.rent-container__subtitle {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(20);
+
+    @media (max-width:$laptop) {
+        font-size: rem(16);
+    }
+
+    @media (max-width:$tablet) {
+        font-size: rem(14);
+    }
+}
+
+.rent-container__title {
+    font-weight: 700;
+    font-size: rem(60);
+    @include adaptiveValue("font-size", 60, 24);
+    @include adaptiveValue("line-height", 80, 30);
+    margin-top: rem(19);
+
+    @media (max-width:$laptop) {
+        margin-top: rem(5);
+    }
+}
+
+.text-yellow {}
