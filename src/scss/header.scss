@@ -87,7 +87,8 @@
     }
 }
 
-.header .spoilers__title {
+.header .spoilers__title,
+.sidenav__body .spoilers__title {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -102,6 +103,12 @@
             transition: 0.3s;
             transform: rotate(180deg);
         }
+    }
+}
+
+.sidenav__body .spoilers__title {
+    img {
+        height: rem(10);
     }
 }
 
