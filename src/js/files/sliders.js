@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { EffectCoverflow, Navigation, Pagination } from 'swiper';
+import Swiper, { EffectCoverflow, Grid, Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -20,8 +20,8 @@ EffectFade, Lazy, Manipulation
 import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
 //import "../../scss/libs/swiper.scss";
-// Полный набор стилей из node_modules
-// import 'swiper/css';
+//набор стилей из node_modules
+import '../../../node_modules/swiper/modules/grid/grid.scss';
 
 // Инициализация слайдеров
 function initSliders() {
@@ -233,9 +233,7 @@ function initSliders() {
 			},
 		});
 	}
-	if (document.querySelector('.welcome__slider')) { // Указываем скласс нужного слайдера
-		let pagginNum = document.querySelectorAll('.welcome-paggination__number');
-		pagginNum[0].classList.add('number-active');
+	if (document.querySelector('.reviews__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		const swiper = new Swiper('.reviews__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
@@ -295,6 +293,70 @@ function initSliders() {
 				},
 				1300: {
 					spaceBetween: 30
+				}
+			},
+		});
+	}
+	if (document.querySelector('.blog__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.blog__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Pagination, Grid, Navigation],
+			observer: true,
+			observeParents: true,
+			spaceBetween: 30,
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			grid: {
+				rows: 3,
+				fill: "row",
+			},
+			speed: 800,
+			grabCursor: true,
+			preloadImages: false,
+			lazy: true,
+			// Пагинация
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				renderBullet: function (index, className) {
+					console.log(index);
+					return '<span class="' + className + '">' + (index + 1) + '</span>';
+				},
+			},
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+
+			// Брейкпоинты
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					grid: {
+						rows: 3,
+						fill: "row",
+					},
+				},
+				767: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+					grid: {
+						rows: 3,
+						fill: "row",
+					},
+				},
+				1024: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+					grid: {
+						rows: 3,
+						fill: "row",
+					},
 				}
 			},
 		});

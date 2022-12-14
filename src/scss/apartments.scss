@@ -2,45 +2,9 @@
     margin-top: 30px;
 }
 
-.apartments__breadcrumbs {
-    display: flex;
-    gap: 5px;
-}
+.apartments__breadcrumbs {}
 
-.apartments-breadcrumbs__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-family: 'Work Sans';
-    font-weight: 400;
-    font-size: rem(14);
-
-    &:not(:last-child) {
-        padding-right: rem(11);
-    }
-
-    &::before {
-        content: '';
-        display: inline-block;
-        background: url('@img/Arrow.svg') 0 0/100%;
-        width: 5px;
-        height: 9px;
-        position: absolute;
-        right: 0;
-    }
-
-    &._active_breadcrumbs {
-        color: #979797;
-
-        &::before {
-            display: none;
-        }
-    }
-
-    @media (max-width:$tablet) {
-        font-size: rem(12);
-    }
-}
+.apartments-breadcrumbs__item {}
 
 .small_container {
     max-width: rem(728);
