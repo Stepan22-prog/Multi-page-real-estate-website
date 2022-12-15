@@ -71,25 +71,25 @@
     }
 }
 
-.form__error {
-    position: absolute;
-    background: #fff;
-    color: red;
-    left: 0;
-    bottom: -46px;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: rem(20);
+// .form__error {
+//     position: absolute;
+//     background: #fff;
+//     color: red;
+//     left: 0;
+//     bottom: -46px;
+//     padding: 10px;
+//     border-radius: 6px;
+//     font-size: rem(20);
 
-    &:before {
-        transform: rotate(180deg);
-        width: rem(15);
-        height: rem(15);
-        position: absolute;
-        content: '';
-        background: url('@img/smallArrow.svg') 0 0/100%;
-        display: block;
-        top: -4px;
-        left: 8px;
-    }
-}
+//     &:before {
+//         transform: rotate(180deg);
+//         width: rem(15);
+//         height: rem(15);
+//         position: absolute;
+//         content: '';
+//         background: url('@img/smallArrow.svg') 0 0/100%;
+//         display: block;
+//         top: -4px;
+//         left: 8px;
+//     }
+// }

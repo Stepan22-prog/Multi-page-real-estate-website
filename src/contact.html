@@ -9,6 +9,60 @@
         @@include('html/_header.htm',{})
         <main class="page">
             @@include('html/_menu.html')
+            <section class="our-contacts">
+                <div class="our-contacts__container">
+                    <div class="our-contacts__breadcrumbs breadcrumbs">
+                        <a href="index" class="our-contacts-breadcrumbs__item breadcrumbs__item">Main</a>
+                        <a href="#"
+                            class="our-contacts-breadcrumbs__item breadcrumbs__item _active_breadcrumbs">Contact</a>
+                    </div>
+                    <h2 class="our-contacts__title title">Contact</h2>
+                </div>
+                <div class="map">
+                    <iframe class="side_padding" width="100%" height="768" frameborder="0" scrollwheel="false"
+                        scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=55.00339508056641%2C25.0286838458558%2C55.57674407958985%2C25.30026874307843&amp;layer=mapnik">
+                    </iframe>
+                    <div data-da=".map,767,0" class="map__info">
+                        <h3 class="map-info__big-text">Dubai, <span class="text-yellow">UAE</span></h3>
+                        <address class="map-info__address">269 King Str, 05th Floor, Utral Hosue Building,
+                            Dubai, VIC 3000, UAE.</address>
+                        <h3 class="map-info__big-text"><a href="tel:+9903449564050">+99 (0) 344 956 4050</a></h3>
+                        <div class="map-info__other-contacts">
+                            <div class="map-other-contacts__item">
+                                <a href="mailto:info@sparch.co">
+                                    <span class="map-other-contacts-item__title">Email: </span>
+                                    <span class="map-other-contacts-item__text">info@sparch.co</span>
+                                </a>
+                            </div>
+                            <div class="map-other-contacts__item">
+                                <span class="map-other-contacts-item__title">Work Hours:</span>
+                                <span class="map-other-contacts-item__text">Monday - Friday : 08h00 - 17h30
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container">
+                    <h3 class="feedback__title">
+                        <div class="text-yellow">Be in touch</div>with us
+                    </h3>
+                    <form data-dev method="POST" action="#" name="form[]" class="feedback__form">
+                        <div class="feedback-form__top">
+                            <input type="text" name="name" placeholder="Name" class="feedback-form__input"></input>
+                            <input type="email" data-required="email" data-error="Email is uncorect" name="email"
+                                placeholder="Email" class="feedback-form__input"></input>
+                            <input type="text" name="subject" placeholder="Subject"
+                                class="feedback-form__input"></input>
+                        </div>
+                        <textarea name="message" cols="30" rows="10" placeholder="Message"
+                            class="feedback-form__textarea"></textarea>
+                        <button type="submit" class="feedback-form__btn button">Submit</button>
+                    </form>
+                </div>
+            </section>
         </main>
         @@include('html/_footer.htm',{})
     </div>
