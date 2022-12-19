@@ -97,7 +97,7 @@
 
 .card__info {
     max-width: rem(350);
-    padding: rem(15) rem(30) rem(8) rem(30);
+    padding: rem(15) rem(30) rem(15) rem(30);
     border: 1px solid $yellow;
     transition: 0.3s;
 
@@ -148,6 +148,27 @@
     @media (any-hover: hover) {
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+//swiper pagination
+.swiper-pagination-type__bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @include adaptiveValue("margin-top", 98, 20);
+    gap: 5px;
+
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #929292;
+
+        &.swiper-pagination-bullet-active {
+            background: $yellow;
         }
     }
 }

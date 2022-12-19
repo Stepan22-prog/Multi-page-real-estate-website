@@ -1,0 +1,121 @@
+.apartments-categ {}
+
+.apartments-categ__title {
+    text-align: center;
+    margin: rem(123) 0 rem(84) 0;
+}
+
+.apartments-categ__slider {
+    position: relative;
+}
+
+.apartments-categ-slider__body {
+    max-width: 1800px;
+    margin: 0 auto;
+
+    @media (max-width:$tablet) {
+        max-width: rem(400);
+    }
+}
+
+.swiper-wrapper {}
+
+.apartments-categ__slide {
+    position: relative;
+
+    &:hover {
+        .apartments-categ__back {
+            opacity: 1;
+            transition: 0.4s;
+        }
+    }
+}
+
+.swiper-slide {}
+
+.apartments-categ-front__img {
+    img {
+        width: 100%;
+    }
+}
+
+.apartments-categ-slide__front-title {
+    position: absolute;
+    bottom: 31%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 700;
+    @include adaptiveValue("font-size", 40, 24);
+}
+
+.apartments-categ__learn {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    position: absolute;
+    z-index: 3;
+    bottom: rem(33);
+    right: rem(10);
+    max-height: rem(20);
+
+    @media (any-hover: hover) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.apartments-categ__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: $yellow;
+    height: 100%;
+    color: #272727;
+    padding: rem(54) rem(31);
+    transition: 0.4s;
+}
+
+.apartments-categ-back__title {
+    font-weight: 700;
+    font-size: rem(48);
+    @include adaptiveValue("font-size", 48, 24);
+}
+
+.apartments-categ-back__text {
+    margin-top: rem(50);
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(22);
+    line-height: rem(26);
+
+    @media (max-width: 1900px) {
+        font-size: rem(16);
+        line-height: math.div(18, 16);
+    }
+}
+
+.apartments-categ__navigation {
+    position: absolute;
+    top: 41%;
+
+    &.swiper-button-prev {
+        left: -30px;
+    }
+
+    &.swiper-button-next {
+        right: -30px;
+        transform: rotate(180deg);
+    }
+
+    @media (max-width: 1440px) {
+        &.swiper-button-prev {
+            left: -15px;
+        }
+
+        &.swiper-button-next {
+            right: -15px;
+        }
+    }
+}

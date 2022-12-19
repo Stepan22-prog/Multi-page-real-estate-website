@@ -361,6 +361,53 @@ function initSliders() {
 			},
 		});
 	}
+	if (document.querySelector('.apartments-categ-slider__body')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.apartments-categ-slider__body', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Pagination, Navigation],
+			autoHeight: true,
+			speed: 800,
+			loop: true,
+			preloadImages: false,
+			lazy: true,
+			grabCursor: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+			// Пагинация
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				},
+				767: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1439: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				}
+			},
+		});
+	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

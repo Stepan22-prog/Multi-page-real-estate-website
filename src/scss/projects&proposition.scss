@@ -138,26 +138,6 @@
 
 .slider-type_interior {}
 
-.projects-slider__pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    @include adaptiveValue("margin-top", 98, 20);
-    gap: 5px;
-
-    .swiper-pagination-bullet {
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background: #929292;
-
-        &.swiper-pagination-bullet-active {
-            background: $yellow;
-        }
-    }
-}
-
 //proposition
 .proposition__header {
     display: flex;
