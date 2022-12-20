@@ -64,6 +64,10 @@
             font-size: rem(30);
             width: max-content;
             height: max-content;
+
+            @media (max-width:$tablet) {
+                font-size: rem(20);
+            }
         }
     }
 }
@@ -94,6 +98,11 @@
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width:$tablet) {
+        width: rem(80);
+        height: rem(80);
+    }
 }
 
 .about__quote {
@@ -118,12 +127,12 @@
 
 .about__columns {
     display: flex;
+    gap: 25px;
+    margin-bottom: rem(35);
 
     @media (max-width:$tablet) {
         flex-direction: column;
     }
-
-    gap: 25px;
 }
 
 .about-columns__item {}

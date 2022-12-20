@@ -76,6 +76,11 @@ body::after {
 	transform: rotate(45deg);
 	background: transparent;
 	color: $yellow;
+
+	@media (max-width:$laptop) {
+		top: -3px;
+		right: 10px;
+	}
 }
 
 .popup__text {
@@ -85,6 +90,10 @@ body::after {
 .popup__title {
 	font-weight: 700;
 	font-size: rem(48);
+
+	@media (max-width:$tablet) {
+		font-size: rem(35);
+	}
 }
 
 .popup__sustitle {
@@ -106,6 +115,7 @@ body::after {
 .popup-form__input {
 	font-size: rem(30);
 	border-bottom: 1px solid #929292;
+	max-width: 100%;
 
 	&:focus-visible {
 		outline: 0;

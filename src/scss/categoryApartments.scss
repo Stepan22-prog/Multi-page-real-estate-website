@@ -118,4 +118,8 @@
             right: -15px;
         }
     }
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
 }

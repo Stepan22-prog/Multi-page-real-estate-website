@@ -476,7 +476,6 @@ export function menuLeft(windowWidth, menuWidth) {
 			burger.style.display = 'none';
 			closeBtn.style.display = 'none';
 			for (let i = 0; i < menuItem.length; i++) {
-				console.log(menuInitial[i]);
 				document.querySelector(`.${menuInitial[i]}`).appendChild(menuItem[i]);
 			}
 			menuInitial.length = 0;

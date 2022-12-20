@@ -106,7 +106,9 @@
     @media (max-width: 1439px) {
         padding: 22px 15px;
     }
+}
 
+.projects-slide__info {
     @media (max-width:$laptop) {
         padding: 13px 11px;
     }
@@ -118,11 +120,16 @@
     @include adaptiveValue("font-size", 32, 18);
 }
 
-.projects-info__text,
-.propostion__text {
+.projects-info__text {
     font-family: 'Work Sans';
     font-weight: 400;
     @include adaptiveValue("font-size", 19, 10);
+}
+
+.proposition-info__text {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: rem(19);
 }
 
 .projects-info__link,

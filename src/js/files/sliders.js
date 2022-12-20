@@ -101,7 +101,6 @@ function initSliders() {
 			on: {
 				slideChangeTransitionEnd: function () {
 					let currentSlide = document.querySelector('.welcome .swiper-slide-active').dataset.slideIndex;
-					console.log(currentSlide);
 					pagginNum.forEach(elem => elem.classList.remove('number-active'));
 					pagginNum[currentSlide].classList.add('number-active');
 				},
@@ -321,7 +320,6 @@ function initSliders() {
 				el: '.swiper-pagination',
 				clickable: true,
 				renderBullet: function (index, className) {
-					console.log(index);
 					return '<span class="' + className + '">' + (index + 1) + '</span>';
 				},
 			},
@@ -391,7 +389,7 @@ function initSliders() {
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
-					spaceBetween: 10
+					spaceBetween: 10,
 				},
 				767: {
 					slidesPerView: 2,

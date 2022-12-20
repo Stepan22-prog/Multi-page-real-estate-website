@@ -70,7 +70,7 @@
 .table-header__small-screen {
     display: none;
     padding: rem(24) rem(0);
-    margin-left: -24px;
+    margin-left: -10px;
 
     @media (max-width:$tablet) {
         display: block;
