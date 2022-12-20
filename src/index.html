@@ -9,7 +9,7 @@
 		@@include('html/_header.htm',{})
 		<main class="page">
 			@@include('html/_menu.html')
-			<section class="welcome">
+			<section class="welcome side_padding">
 				<div class="welcome__social">
 					<a href="" class="welcome-social__item"><img src="@img/social/facebook.svg" alt="facbook"></a>
 					<a href="" class="welcome-social__item"><img src="@img/social/twitter.svg" alt="twitter"></a>
@@ -20,7 +20,9 @@
 				<div class="welcome__slider swiper">
 					<div class="welcome__wrapper swiper-wrapper">
 						<div data-slide-index="0" class="welcome__slide swiper-slide">
-							<img src="@img/welcome/slider1.jpg" alt="welcome" class="welcome-slide__background">
+							<div class="welcome-slide__background">
+								<img src="@img/welcome/slider1.jpg" alt="welcome">
+							</div>
 							<div class="welcome-slide__content">
 								<div class="welcome-slide__decoration"><img src="@img/welcome/decoration.svg"
 										alt="decoration"></div>
@@ -33,7 +35,9 @@
 							</div>
 						</div>
 						<div data-slide-index="1" class="welcome__slide swiper-slide">
-							<img src="@img/welcome/1920x1080.jpg" alt="welcome" class="welcome-slide__background">
+							<div class="welcome-slide__background">
+								<img src="@img/welcome/1920x1080.jpg" alt="welcome">
+							</div>
 							<div class="welcome-slide__content">
 								<div class="welcome-slide__decoration"><img src="@img/welcome/decoration.svg"
 										alt="decoration"></div>
@@ -45,7 +49,9 @@
 							</div>
 						</div>
 						<div data-slide-index="2" class="welcome__slide swiper-slide">
-							<img src="@img/welcome/slider1.jpg" alt="welcome" class="welcome-slide__background">
+							<div class="welcome-slide__background">
+								<img src="@img/welcome/slider1.jpg" alt="welcome">
+							</div>
 							<div class="welcome-slide__content">
 								<div class="welcome-slide__decoration"><img src="@img/welcome/decoration.svg"
 										alt="decoration"></div>

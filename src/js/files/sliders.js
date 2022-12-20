@@ -43,12 +43,8 @@ function initSliders() {
 			autoHeight: true,
 			speed: 800,
 			grabCursor: true,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
-			//loop: true,
-			//preloadImages: false,
-			//lazy: true,
+			preloadImages: false,
+			lazy: true,
 
 			/*
 			// Эффекты
