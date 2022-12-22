@@ -34,7 +34,7 @@ class ScrollWatcher {
 			this.scrollWatcherLogging(`Проснулся, слежу за объектами (${items.length})...`);
 			// Уникализируем параметры
 			let uniqParams = uniqArray(Array.from(items).map(function (item) {
-				return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : '0px'}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0}`;
+				return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : '0px'}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0.1}`;
 			}));
 			// Получаем группы объектов с одинаковыми параметрами,
 			// создаем настройки, инициализируем наблюдатель
@@ -48,7 +48,7 @@ class ScrollWatcher {
 				let groupItems = Array.from(items).filter(function (item) {
 					let watchRoot = item.dataset.watchRoot ? item.dataset.watchRoot : null;
 					let watchMargin = item.dataset.watchMargin ? item.dataset.watchMargin : '0px';
-					let watchThreshold = item.dataset.watchThreshold ? item.dataset.watchThreshold : 0;
+					let watchThreshold = item.dataset.watchThreshold ? item.dataset.watchThreshold : 0.1;
 					if (
 						String(watchRoot) === paramsWatch.root &&
 						String(watchMargin) === paramsWatch.margin &&
