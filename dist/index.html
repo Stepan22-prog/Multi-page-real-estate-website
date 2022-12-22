@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Main</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221222132957">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header__logo"><img src="img/logo.svg" alt=""></a>
+			<div class="header__container">
+				<nav class="header__menu header-menu">
+					<div data-spoilers class="spoilers header-menu__item menu__item">
+						<div class="spoilers__item">
+							<button type="button" data-spoiler class="spoilers__title">Buy<img src="img/smallArrow.svg" alt="arrow"></button>
+							<ul class="spoilers__body">
+								<li class="spoiler-body__item"><a href="category.html">Category number one</a></li>
+								<li class="spoiler-body__item"><a href="category.html">Apartments in Dubai</a></li>
+								<li class="spoiler-body__item"><a href="category.html">Category number twenty five</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-menu__item menu__item"><a href="blog.html">Blog</a></div>
+					<div class="header-menu__item menu__item"><a href="services.html">About</a></div>
+					<div class="header-menu__item menu__item"><a href="contact.html">Contact</a></div>
+				</nav>
+				<button data-popup="#popup" data-da=".sidenav,767,last" class="header__consult-btn button">Book a
+					consultation</button>
+			</div>
+			<div data-da=".sidenav,767,last" class="header__phone"><a href="tel:+3802120000000">+380 (212) 000-00-00</a></div>
+			<a href='javascript:void(0)' class='closebtn'>+</a>
+		</header>
+		<main class="page">
+			<div id='mySidenav' class='sidenav'>
+				<ul class="sidenav__body">
+				</ul>
+			</div>
+			<div class='header__burger'>
+				<span></span>
+			</div>
+			<div id='main'>
+			</div>
+			<section class="welcome side_padding">
+				<div class="welcome__social">
+					<a href="" class="welcome-social__item"><img src="img/social/facebook.svg" alt="facbook"></a>
+					<a href="" class="welcome-social__item"><img src="img/social/twitter.svg" alt="twitter"></a>
+					<a href="" class="welcome-social__item"><img src="img/social/youtube.svg" alt="youtube"></a>
+					<a href="" class="welcome-social__item"><img src="img/social/instagram.svg" alt="instagram"></a>
+					<a href="" class="welcome-social__item"><img src="img/social/linkedIn.svg" alt="linkedIn"></a>
+				</div>
+				<div class="welcome__slider swiper">
+					<div class="welcome__wrapper swiper-wrapper">
+						<div data-slide-index="0" class="welcome__slide swiper-slide">
+							<div class="welcome-slide__background">
+								<picture><source srcset="img/welcome/slider1.webp" type="image/webp"><img src="img/welcome/slider1.jpg" alt="welcome"></picture>
+							</div>
+							<div class="welcome-slide__content">
+								<div class="welcome-slide__decoration"><img src="img/welcome/decoration.svg" alt="decoration"></div>
+								<div class="welcome-slide__subtitle img-subtitle">Lorem ipsum</div>
+								<div class="welcome-slide__title img-title">Welcome home
+									<div class="new-row"><span class="text-yellow">to</span> luxury</div>
+								</div>
+								<div class="welcome-slide__link">Book a consultation <img src="img/Arrow.svg" alt="arrow"></div>
+							</div>
+						</div>
+						<div data-slide-index="1" class="welcome__slide swiper-slide">
+							<div class="welcome-slide__background">
+								<picture><source srcset="img/welcome/1920x1080.webp" type="image/webp"><img src="img/welcome/1920x1080.jpg" alt="welcome"></picture>
+							</div>
+							<div class="welcome-slide__content">
+								<div class="welcome-slide__decoration"><img src="img/welcome/decoration.svg" alt="decoration"></div>
+								<div class="welcome-slide__subtitle img-subtitle">Rent</div>
+								<div class="welcome-slide__title img-title">Furnished Apartments <span class="text-yellow">in Dubai</span></div>
+								<div class="welcome-slide__link">Book a consultation <img src="img/Arrow.svg" alt="arrow"></div>
+							</div>
+						</div>
+						<div data-slide-index="2" class="welcome__slide swiper-slide">
+							<div class="welcome-slide__background">
+								<picture><source srcset="img/welcome/slider1.webp" type="image/webp"><img src="img/welcome/slider1.jpg" alt="welcome"></picture>
+							</div>
+							<div class="welcome-slide__content">
+								<div class="welcome-slide__decoration"><img src="img/welcome/decoration.svg" alt="decoration"></div>
+								<div class="welcome-slide__subtitle img-subtitle">Lorem ipsum</div>
+								<div class="welcome-slide__title img-title">Welcome home <span class="text-yellow">to</span> luxury</div>
+								<div class="welcome-slide__link">Book a consultation <img src="img/Arrow.svg" alt="arrow"></div>
+							</div>
+						</div>
+					</div>
+					<div class="welcome__slide-controllers">
+						<div class="swiper-button-prev">prev</div>
+						<div class="swiper-button-next">next</div>
+					</div>
+				</div>
+				<div class="welcome__paggination">
+					<div class="welcome-paggination__block">
+						<div class="welcome-paggination__number">01</div>
+						<div class="welcome-paggination__text">Lorem Ipsum <div class="new__row">Dolorem apset</div>
+						</div>
+					</div>
+					<div class="welcome-paggination__block">
+						<div class="welcome-paggination__number">02</div>
+						<div class="welcome-paggination__text">Lorem Ipsum <div class="new__row">Dolorem apset</div>
+						</div>
+					</div>
+					<div class="welcome-paggination__block">
+						<div class="welcome-paggination__number">03</div>
+						<div class="welcome-paggination__text">Lorem Ipsum <div class="new__row">Dolorem apset</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects side_padding">
+				<div data-tabs data-tabs-animate="600" class="projects__tabs tabs">
+					<div data-watch data-watch-once class="projects__container animation-type_from-bottom">
+						<h3 class="projects__title">Latest projects</h3>
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">All</button>
+							<button type="button" class="tabs__title">Building</button>
+							<button type="button" class="tabs__title">Interior</button>
+						</nav>
+					</div>
+					<div data-watch data-watch-once class="animation__conteiner">
+						<div data-tabs-body class="tabs__content animation-type_from-right">
+							<div class="tabs__body projects__slider slider-type_all swiper">
+								<div class="projects__wrapper swiper-wrapper">
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><picture><source srcset="img/projects/428x573.webp" type="image/webp"><img src="img/projects/428x573.jpg" alt=""></picture></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (2).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><picture><source srcset="img/projects/428x573.webp" type="image/webp"><img src="img/projects/428x573.jpg" alt=""></picture></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (1).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (1).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (1).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination-type__bullet swiper-pagination"></div>
+							</div>
+							<div class="tabs__body projects__slider slider-type_building  swiper">
+								<div class="projects__wrapper swiper-wrapper">
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (1).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><picture><source srcset="img/projects/428x573.webp" type="image/webp"><img src="img/projects/428x573.jpg" alt=""></picture></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (1).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination-type__bullet swiper-pagination"></div>
+							</div>
+							<div class="tabs__body projects__slider slider-type_interior swiper">
+								<div class="projects__wrapper swiper-wrapper">
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (2).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+									<div class="projects__slide swiper-slide">
+										<div class="projects-slide__item">
+											<div class="projects-slide__background"><img src="img/projects/428x573 (2).jpg" alt=""></div>
+											<div class="projects-slide__title">Dubai</div>
+											<div class="projects-slide__info projects-info">
+												<div class="projects-info__title">Dubai</div>
+												<div class="projects-info__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Consequat molestie integer aliquam consectetur.
+													Faucibus
+													vitae dui massa tellus magna sit.</div>
+												<a href="" class="projects-info__link">See project <img src="img/Arrow.svg" alt="arrow"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination-type__bullet swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about-container">
+					<div class="about__single">
+						<p data-watch data-watch-once class="about__subtitle animation-type_from-bottom">Our expertise
+						</p>
+						<h2 data-watch data-watch-once class="about__title title animation-type_from-bottom">"The best
+							apartment in Dubai" we will find your dream</h2>
+						<p data-watch data-watch-once class="about__text animation-type_from-bottom">Lorem ipsum dolor
+							sit amet, consectetur adipiscing elit. Suspendisse nibh
+							massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas
+							ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur
+							vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo
+							finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor
+							mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut
+							risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna.
+							Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum
+							dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div data-watch data-watch-once class="animation-container">
+					<div class="about__video animation-type_from-right">
+						<div class="about-video__img"><picture><source srcset="img/about/placeholder.webp" type="image/webp"><img src="img/about/placeholder.jpg" alt="video"></picture></div>
+						<div class="about-video__background-error"></div>
+						<div class="about-video__controller"><img src="img/about/play.svg" alt="controller"></div>
+					</div>
+				</div>
+				<div class="about__container">
+					<div class="about__quote">
+						<div class="about-quote__text">“Don’t limit yourself. Many people limit themselves to what they
+							think they can do. You can go as far as your mind lets you. What you believe, remember, you
+							can achieve.”<span class="text-yellow"> — Mary Kay Ash</span> </div>
+					</div>
+					<div class="about__columns">
+						<div class="about-columns__item">
+							<div data-watch data-watch-once class="about-item__img animation-type_zoom-out"><img src="img/about/placeholder (1).jpg" alt="img"></div>
+							<p data-watch data-watch-once data-watch-threshold="0" class="about-item__text animation-type_from-bottom">Sed in sem
+								pellentesque, eleifend erat vitae, tincidunt turpis.
+								Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus,
+								odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id
+								tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula
+								purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat
+								placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id
+								efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla
+								tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae
+								suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis
+								orci.</p>
+						</div>
+						<div class="about-columns__item">
+							<div data-watch data-watch-once class="about-item__img animation-type_zoom-out"><img src="img/about/placeholder (2).jpg" alt="img"></div>
+							<p data-watch data-watch-once class="about-item__text animation-type_from-bottom">Vivamus
+								non diam vel lorem efficitur mattis in gravida ante. Ut
+								ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus.
+								Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit
+								dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor
+								quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum
+								dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim,
+								sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla
+								faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit
+								quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis
+								dolor arcu sed leo. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch data-watch-once data-watch-threshold="0.4" class="contact">
+				<div class="contact__subtitle animation-type_from-right">Do you have any questions?</div>
+				<div class="contact__title animation-type_from-left animation-delay__02">Contact us</div>
+				<form data-dev method="POST" action="#" class="contact__form form animation-type_from-right animation-delay__04">
+					<input type="email" name="form[]" placeholder="Enter your email" data-required="email" data-error="E-mail is uncorrect" class="contact-form__input">
+					<button type="submit" class="contact-form__btn">Send</button>
+				</form>
+			</section>
+			<section class="articles">
+				<div class="artices__container">
+					<div class="articles__header">
+						<h2 data-watch data-watch-once class="articles__title title animation-type_from-bottom">Useful
+							articles</h2>
+						<a data-watch data-watch-once href="" class="articles__link animation-type_from-bottom">View all
+							articles<img src="img/articles/Group 93.svg" alt="arrow"></a>
+					</div>
+					<div data-watch data-watch-once class="articles__body animation-type_from-bottom">
+						<div class="articles__card">
+							<div class="articles-card__img"><img src="img/articles/350x350 (1).jpg" alt="img"></div>
+							<h3 class="articles-card__title">Discover Architecture</h3>
+							<div class="articles-card__info">
+								<div class="articles-info__date">Jule 03, 2022</div>
+								<h3 class="articles-info__title">Discover Architecture</h3>
+								<p class="articles-info__text">Projects for many large domestic and foreign
+									corporations, enterprises in many elds such</p>
+								<a href="" class="articles-info__link">Learn more<img src="img/articles/Arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+						<div class="articles__card">
+							<div class="articles-card__img"><img src="img/articles/350x350 (1).jpg" alt="img"></div>
+							<h3 class="articles-card__title">Discover Architecture</h3>
+							<div class="articles-card__info">
+								<div class="articles-info__date">Jule 03, 2022</div>
+								<h3 class="articles-info__title">Discover Architecture</h3>
+								<p class="articles-info__text">Projects for many large domestic and foreign
+									corporations, enterprises in many elds such</p>
+								<a href="" class="articles-info__link">Learn more<img src="img/articles/Arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+						<div class="articles__card">
+							<div class="articles-card__img"><img src="img/articles/350x350 (1).jpg" alt="img"></div>
+							<h3 class="articles-card__title">Discover Architecture</h3>
+							<div class="articles-card__info">
+								<div class="articles-info__date">Jule 03, 2022</div>
+								<h3 class="articles-info__title">Discover Architecture</h3>
+								<p class="articles-info__text">Projects for many large domestic and foreign
+									corporations, enterprises in many elds such</p>
+								<a href="" class="articles-info__link">Learn more<img src="img/articles/Arrow.svg" alt="arrow"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div data-watch data-watch-once class="reviews__slider swiper animation-type_zoom-out">
+					<div class="reviews__wrapper swiper-wrapper">
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews-slide__photo"><img src="img/reviews/about10 1 (1).jpg" alt="img"></div>
+							<div class="reviews-slide__decor">”</div>
+							<h3 class="reviews-slide__name">Robert</h3>
+							<h4 class="reviews-slide__position">Founder in <span class="text-yellow">Apple inc.</span>
+							</h4>
+							<p class="reviews-slide__text">Founded in 2007, Sparch is specializing in providing
+								innovative services such as website design, brand identity and marketing</p>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews-slide__photo"><img src="img/reviews/about10 1.jpg" alt="img"></div>
+							<div class="reviews-slide__decor">”</div>
+							<h3 class="reviews-slide__name">Paul</h3>
+							<h4 class="reviews-slide__position">Owner in <span class="text-yellow">Paul.com</span></h4>
+							<p class="reviews-slide__text">Projects for many large domestic and foreign corporations,
+								enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews-slide__photo"><img src="img/reviews/about10 1 (1).jpg" alt="img"></div>
+							<div class="reviews-slide__decor">”</div>
+							<h3 class="reviews-slide__name">Robert</h3>
+							<h4 class="reviews-slide__position">Founder in <span class="text-yellow">Apple inc.</span>
+							</h4>
+							<p class="reviews-slide__text">Founded in 2007, Sparch is specializing in providing
+								innovative services such as website design, brand identity and marketing</p>
+						</div>
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews-slide__photo"><img src="img/reviews/about10 1.jpg" alt="img"></div>
+							<div class="reviews-slide__decor">”</div>
+							<h3 class="reviews-slide__name">Paul</h3>
+							<h4 class="reviews-slide__position">Owner in <span class="text-yellow">Paul.com</span></h4>
+							<p class="reviews-slide__text">Projects for many large domestic and foreign corporations,
+								enterprises in many elds such as nance, banking, F&B, education, communication.</p>
+						</div>
+					</div>
+					<div class="projects-slider__pagination swiper-pagination"></div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<h2 data-watch data-watch-once class="faq__title title animation-type_from-bottom">faq</h2>
+					<div data-watch data-watch-once data-spoilers data-one-spoiler class="faq__spoilers spoilers">
+						<div class="faq-spoilers__item spoilers__item animation-type_from-right">
+							<button type="button" data-spoiler class="faq-spoilers__title spoilers__title">The largest
+								and oldest Quotations Page on the Web with about 30 categories
+								<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.3223 11.0234L1.00031 0.998896" stroke="#FCD54C" />
+									<path d="M1 21L12.322 10.9755" stroke="#FCD54C" />
+								</svg>
+							</button>
+							<div class="faq-spoilers__body spoilers__body">
+								Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit,
+								rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor,
+								eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a
+								dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
+								scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget.
+								Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam
+								sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque
+								accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque
+								elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+							</div>
+						</div>
+						<div class="faq-spoilers__item spoilers__item animation-type_from-right animation-delay__02">
+							<button type="button" data-spoiler class="faq-spoilers__title spoilers__title">A huge
+								collection of inspirational quotes, thoughts of greatest minds in history
+								<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.3223 11.0234L1.00031 0.998896" stroke="#FCD54C" />
+									<path d="M1 21L12.322 10.9755" stroke="#FCD54C" />
+								</svg>
+							</button>
+							<div class="faq-spoilers__body spoilers__body">
+								Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit,
+								rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor,
+								eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a
+								dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
+								scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget.
+								Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam
+								sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque
+								accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque
+								elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+							</div>
+						</div>
+						<div class="faq-spoilers__item spoilers__item animation-type_from-right animation-delay__04">
+							<button type="button" data-spoiler class="faq-spoilers__title spoilers__title">Quotations
+								from the great works of literature
+								<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.3223 11.0234L1.00031 0.998896" stroke="#FCD54C" />
+									<path d="M1 21L12.322 10.9755" stroke="#FCD54C" />
+								</svg>
+							</button>
+							<div class="faq-spoilers__body spoilers__body">
+								Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit,
+								rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor,
+								eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a
+								dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
+								scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget.
+								Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam
+								sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque
+								accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque
+								elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+							</div>
+						</div>
+						<div class="faq-spoilers__item spoilers__item animation-type_from-right animation-delay__06">
+							<button type="button" data-spoiler class="faq-spoilers__title spoilers__title">Read quotes
+								and sayings from famous people in history
+								<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.3223 11.0234L1.00031 0.998896" stroke="#FCD54C" />
+									<path d="M1 21L12.322 10.9755" stroke="#FCD54C" />
+								</svg>
+							</button>
+							<div class="faq-spoilers__body spoilers__body">
+								Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit,
+								rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor,
+								eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a
+								dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
+								scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget.
+								Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam
+								sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque
+								accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque
+								elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+							</div>
+						</div>
+						<div class="faq-spoilers__item spoilers__item animation-type_from-right animation-delay__08">
+							<button type="button" data-spoiler class="faq-spoilers__title spoilers__title">Collected
+								quotes from Albert Einstein
+								<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.3223 11.0234L1.00031 0.998896" stroke="#FCD54C" />
+									<path d="M1 21L12.322 10.9755" stroke="#FCD54C" />
+								</svg>
+							</button>
+							<div class="faq-spoilers__body spoilers__body">
+								Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit,
+								rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor,
+								eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a
+								dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a
+								scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget.
+								Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam
+								sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque
+								accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque
+								elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__logo"><a href="/index"><img src="img/logo.svg" alt="logo"></a></div>
+			<div class="footer__grid">
+				<div data-spoilers="1320,max" class="footer__spoilers spoilers">
+					<div class="footer-spoilers__item spoilers__item">
+						<button type="button" data-spoiler class="footer-spoilers-item__title  spoilers__title">Buy<img src="img/Arrow.svg" alt="arrow"></button>
+						<div class="footer-spoilers-item__body spoilers__body">
+							<a href="category.html" class="footer-spoilers-item__link">Apartment in Dubai</a>
+							<a href="category.html" class="footer-spoilers-item__link">House in Dubai</a>
+							<a href="category.html" class="footer-spoilers-item__link">Apartments in Dubai</a>
+							<a href="category.html" class="footer-spoilers-item__link">Loft in Dubai</a>
+							<a href="category.html" class="footer-spoilers-item__link">Penthouse in Dubai</a>
+							<a href="category.html" class="footer-spoilers-item__link">Villa in Dubai</a>
+						</div>
+					</div>
+					<div class="footer-spoilers__item spoilers__item">
+						<button type="button" data-spoiler class="footer-spoilers-item__title  spoilers__title">Services<img src="img/Arrow.svg" alt="arrow"></button>
+						<div class="footer-spoilers-item__body spoilers__body">
+							<a href="#" class="footer-spoilers-item__link">Property management in Dubai, UAE</a>
+							<a href="#" class="footer-spoilers-item__link">Sell ​​property in Dubai, UAE</a>
+							<a href="#" class="footer-spoilers-item__link">Rent property in Dubai, UAE</a>
+							<a href="#" class="footer-spoilers-item__link">Investments in Dubai, UAE</a>
+							<a href="#" class="footer-spoilers-item__link">Real estate for cryptocurrency in Dubai</a>
+							<a href="#" class="footer-spoilers-item__link">Moving to Dubai, UAE</a>
+						</div>
+					</div>
+					<div class="footer-spoilers__item spoilers__item">
+						<button type="button" data-spoiler class="footer-spoilers-item__title  spoilers__title">Information<img src="img/Arrow.svg" alt="arrow"></button>
+						<div class="footer-spoilers-item__body spoilers__body">
+							<a href="#" class="footer-spoilers-item__link">Video</a>
+							<a href="#" class="footer-spoilers-item__link">Podcasts</a>
+							<a href="#" class="footer-spoilers-item__link">Laws</a>
+							<a href="#" class="footer-spoilers-item__link">Questions and answers</a>
+							<a href="#" class="footer-spoilers-item__link">Books</a>
+							<a href="#" class="footer-spoilers-item__link">Articles</a>
+						</div>
+					</div>
+					<div class="footer-spoilers__item spoilers__item">
+						<button type="button" data-spoiler class="footer-spoilers-item__title  spoilers__title">About
+							company<img src="img/Arrow.svg" alt="arrow"></button>
+						<div class="footer-spoilers-item__body spoilers__body">
+							<a href="#" class="footer-spoilers-item__link">Jobs</a>
+							<a href="#" class="footer-spoilers-item__link">Story</a>
+							<a href="#" class="footer-spoilers-item__link">Licenses</a>
+							<a href="#" class="footer-spoilers-item__link">Why are we</a>
+							<a href="#" class="footer-spoilers-item__link">Real estate agency</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer-contacr__title">Contact</div>
+					<address class="footer-contact__address">964 Worthington Drive
+						Dubai, UAE</address>
+					<div class="footer-contact__email">dubairealty@mail.com</div>
+					<button data-popup="#popup" class="footer-contact__btn button">Book a consultation</button>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__copyright">Copyright © 2022 Dubai Realty</div>
+				<div class="footer__social">
+					<a href="" class="footer-social__item"><img src="img/social/facebook.svg" alt="facebook"></a>
+					<a href="" class="footer-social__item"><img src="img/social/instagram.svg" alt="instagram"></a>
+					<a href="" class="footer-social__item"><img src="img/social/linkedIn.svg" alt="linkedIn"></a>
+					<a href="" class="footer-social__item"><img src="img/social/twitter.svg" alt="twitter"></a>
+					<a href="" class="footer-social__item"><img src="img/social/youtube.svg" alt="youtube"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">+</button>
+				<div class="popup__text">
+					<h2 class="popup__title">Leave your contacts</h2>
+					<h3 class="popup__sustitle">we will contact you within three hours</h3>
+					<form data-dev method="POST" action="#" action="" class="popup__form">
+						<input type="text" placeholder="Name" class="popup-form__input">
+						<input type="number" placeholder="Phone" class="popup-form__input">
+						<button type="submit" class="popup-form__btn button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221222132957"></script>
+</body>
+
+</html>
